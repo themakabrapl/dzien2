@@ -20,7 +20,7 @@ export default {
     },
     methods: {
         async dodaj_wpis() {
-            await dzien2_backend.dodaj_Wpisy(this.nowyBlog);
+            await dzien2_backend.dodaj_wpis(this.nowyBlog);
         },
         async pobierzWpisy() {
             this.wpisy = await dzien2_backend.odczytaj_wpisy();
